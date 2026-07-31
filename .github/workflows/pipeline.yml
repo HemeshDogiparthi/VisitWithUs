@@ -18,11 +18,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install project (editable) 	# CRITICAL: makes "import project" work
-        run: |
-          pip install -e .
       - name: Install Dependencies
         run: pip install -r VisitWithUs_project/deployment/requirements.txt
+      - name: Add project to PYTHONPATH (so imports work) 
+        run: echo "PYTHONPATH=$(pwd)/VisitWithUs_project" >> $GITHUB_ENV
       - name: Register Dataset
         run: python VisitWithUs_project/model_building/data_register.py
       - name: Upload Registered Dataset
