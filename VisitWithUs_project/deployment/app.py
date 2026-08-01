@@ -52,7 +52,7 @@ input_data = pd.DataFrame([{
     "Passport": Passport,
     "PitchSatisfactionScore": PitchSatisfactionScore,
     "OwnCar": OwnCar,
-    "NumberOfChildrenVisiting": NumberOfChildrenVisiting
+    "NumberOfChildrenVisiting": NumberOfChildrenVisiting,
     "MonthlyIncome": MonthlyIncome
 }])
 
