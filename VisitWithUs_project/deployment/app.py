@@ -40,7 +40,7 @@ input_data = pd.DataFrame([{
     "Age": Age,
     "TypeofContact": TypeofContact,
     "CityTier": CityTier,
-    "DurationOfPitch": DurationOfPitch
+    "DurationOfPitch": DurationOfPitch,
     "Occupation": Occupation,
     "Gender": Gender,
     "NumberOfPersonVisiting": NumberOfPersonVisiting,
