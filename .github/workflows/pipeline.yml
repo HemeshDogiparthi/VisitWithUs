@@ -47,10 +47,10 @@ jobs:
         with:
           name: data-splits
           path: |
-            VisitWithUs_project/data/Xtrain.csv
-            VisitWithUs_project/data/Xtest.csv
-            VisitWithUs_project/data/ytrain.csv
-            VisitWithUs_project/data/ytest.csv
+            VisitWithUs_project/data/X_train.csv
+            VisitWithUs_project/data/X_test.csv
+            VisitWithUs_project/data/y_train.csv
+            VisitWithUs_project/data/y_test.csv
 
   model-traning:
     needs: data-prep
